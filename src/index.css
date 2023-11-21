@@ -8,3 +8,15 @@
     max-width: 150px; 
     height: auto;
   }
+
+
+  body, #root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  footer {
+    margin-top: auto; 
+  }
+  
