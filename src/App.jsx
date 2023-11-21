@@ -1,18 +1,22 @@
 //Éste sería el componente principal
 import React from 'react';
-import Routes from './Routes';
+
+import AppRoutes from './AppRoutes';
 
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 
 
 function App() {
+  console.log('Rendering App component'); // depuracion
   return (
+    <div>
+      <Navbar />
       <div className="App">
-          <Routes />
-          <Navbar/>
-          <Footer/>
+        <AppRoutes />
       </div>
+      <Footer />
+    </div>
   );
 }
 
